@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_design"
+    tools:context=".MainScreen.MainActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/background_design2"
+        android:paddingTop="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginEnd="8dp">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/showTopBannerRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#CDDC39"
+
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/optionsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_below="@id/showTopBannerRecyclerView"
+                android:layout_marginTop="20dp"
+
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1.2"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="11dp"
+                                android:layout_marginEnd="11dp"
+                                android:layout_weight="0.75"
+                                android:background="@drawable/box_holder_background"
+                                android:padding="7dp"
+                                android:src="@drawable/upi_icon" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.25"
+                                android:textColor="@color/black"
+                                android:gravity="center_horizontal"
+                                android:text="UPI  Transfers" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="11dp"
+                                android:layout_marginEnd="11dp"
+                                android:layout_weight="0.75"
+                                android:background="@drawable/box_holder_background"
+                                android:padding="7dp"
+                                android:src="@drawable/mobile_icon" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.25"
+                                android:textColor="@color/black"
+                                android:gravity="center_horizontal"
+                                android:text="Recharge      &amp; Bills" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="11dp"
+                                android:layout_marginEnd="11dp"
+                                android:layout_weight="0.75"
+                                android:background="@drawable/box_holder_background"
+                                android:paddingTop="5dp"
+                                android:src="@drawable/credit_card_icon" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.25"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/black"
+                                android:text="Credit Card Payment" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="11dp"
+                                android:layout_marginEnd="11dp"
+                                android:layout_weight="0.75"
+                                android:background="@drawable/box_holder_background"
+                                android:padding="7dp"
+                                android:src="@drawable/wallet_to_bank_icon" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.25"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/black"
+                                android:text="UPI  Transfers" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1.2"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="11dp"
+                                android:layout_marginEnd="11dp"
+                                android:layout_weight="0.75"
+                                android:background="@drawable/box_holder_background"
+                                android:padding="7dp"
+                                android:src="@drawable/zip_icon" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.25"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/black"
+                                android:text="PayLater" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="11dp"
+                                android:layout_marginEnd="11dp"
+                                android:layout_weight="0.75"
+                                android:background="@drawable/box_holder_background"
+                                android:src="@drawable/zip_emi_icon" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.25"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/black"
+                                android:text="Loans" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="11dp"
+                                android:layout_marginEnd="11dp"
+                                android:layout_weight="0.75"
+                                android:background="@drawable/box_holder_background"
+                                android:padding="3dp"
+                                android:src="@drawable/xtra_icon" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.25"
+                                android:textColor="@color/black"
+                                android:gravity="center_horizontal"
+                                android:text="Earn 14%" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="11dp"
+                                android:layout_marginEnd="11dp"
+                                android:layout_weight="0.75"
+                                android:background="@drawable/box_holder_background"
+                                android:padding="7dp"
+                                android:src="@drawable/upi_icon" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.25"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/black"
+                                android:text="UPI  Transfers" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1.6"
+                        android:background="#4CAF50">
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+                android:id="@+id/middleBar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/optionsLayout"
+                android:layout_marginTop="20dp"
+               >
+                <ImageView
+                    android:id="@+id/upi_icon_in_bar"
+                    android:layout_width="38dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/upi_icon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="UPI Money Transfer"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical"
+                    android:layout_toEndOf="@id/upi_icon_in_bar"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="My QR Code >"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/payContactBar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/middleBar"
+                android:layout_marginTop="20dp"
+                android:background="@color/blue">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Pay to contacts"
+                    android:textSize="18sp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_vertical"
+                    />
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/paymentOptionBar"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/payContactBar"
+                android:layout_marginTop="20dp"
+                android:background="@color/blue"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#FFEB3B"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="#8BC34A">
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="#2196F3">
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#FFEB3B"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="#F44336">
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="#673AB7">
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:background="#FF5722"-->
+                <!--                    android:layout_weight="1">-->
+                <!--                    -->
+                <!--                </LinearLayout>-->
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/billPaymentBar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/paymentOptionBar"
+                android:layout_marginTop="20dp"
+                android:background="@color/blue">
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/showBillPaymentOptionRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_below="@id/billPaymentBar"
+                android:layout_marginTop="20dp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
