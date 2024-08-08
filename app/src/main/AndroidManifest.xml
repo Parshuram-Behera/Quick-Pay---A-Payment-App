@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainScreen.MainActivity"
+            android:name=".FragmentScreen.MainActivity"
             android:exported="true" />
     </application>
 

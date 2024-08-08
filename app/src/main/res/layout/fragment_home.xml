@@ -2,12 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_design"
-    tools:context=".FragmentScreen.MainActivity">
-
+    android:background="@color/blue"
+    tools:context=".FragmentScreen.HomeFragment">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline9"
@@ -101,7 +99,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.25"
                                 android:gravity="center_horizontal"
-                                android:text="@string/upi_transfers2"
+                                android:text="UPI  Transfers"
                                 android:textColor="@color/black" />
 
                         </LinearLayout>
@@ -129,7 +127,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.25"
                                 android:gravity="center_horizontal"
-                                android:text="@string/recharge_amp_bills2"
+                                android:text="Recharge      &amp; Bills"
                                 android:textColor="@color/black" />
 
                         </LinearLayout>
@@ -157,7 +155,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.25"
                                 android:gravity="center_horizontal"
-                                android:text="@string/credit_card_payment"
+                                android:text="Credit Card Payment"
                                 android:textColor="@color/black" />
 
                         </LinearLayout>
@@ -185,7 +183,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.25"
                                 android:gravity="center_horizontal"
-                                android:text="@string/upi_transfers"
+                                android:text="UPI  Transfers"
                                 android:textColor="@color/black" />
 
                         </LinearLayout>
@@ -224,7 +222,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.25"
                                 android:gravity="center_horizontal"
-                                android:text="@string/paylater"
+                                android:text="PayLater"
                                 android:textColor="@color/black" />
 
                         </LinearLayout>
@@ -251,7 +249,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.25"
                                 android:gravity="center_horizontal"
-                                android:text="@string/loans"
+                                android:text="Loans"
                                 android:textColor="@color/black" />
 
                         </LinearLayout>
@@ -279,7 +277,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.25"
                                 android:gravity="center_horizontal"
-                                android:text="@string/earn_14"
+                                android:text="Earn 14%"
                                 android:textColor="@color/black" />
 
                         </LinearLayout>
@@ -299,15 +297,15 @@
                                 android:layout_marginEnd="11dp"
                                 android:layout_weight="0.75"
                                 android:background="@drawable/box_holder_background"
-                                android:padding="9dp"
-                                android:src="@drawable/home_rent_icon" />
+                                android:padding="7dp"
+                                android:src="@drawable/upi_icon" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.25"
                                 android:gravity="center_horizontal"
-                                android:text="@string/pay_rent"
+                                android:text="UPI  Transfers"
                                 android:textColor="@color/black" />
 
                         </LinearLayout>
@@ -358,7 +356,7 @@
                     android:layout_centerVertical="true"
                     android:layout_toEndOf="@id/upi_icon_in_bar"
                     android:gravity="center_vertical"
-                    android:text="@string/upi_money_transfer"
+                    android:text="UPI Money Transfer"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -368,7 +366,7 @@
                     android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
                     android:gravity="center_vertical"
-                    android:text="@string/my_qr_code"
+                    android:text="My QR Code >"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
 
@@ -388,7 +386,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginStart="15dp"
                     android:gravity="center_vertical"
-                    android:text="@string/pay_to_contacts"
+                    android:text="Pay to contacts"
                     android:textColor="@color/white_faded"
                     android:textSize="18sp" />
 
@@ -409,7 +407,7 @@
                 android:layout_height="150dp"
                 android:layout_below="@id/payContactBar"
                 android:layout_marginTop="20dp"
-                android:background="@color/white"
+                android:background="@color/blue"
                 android:orientation="vertical"
                 android:weightSum="2">
 
@@ -417,6 +415,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="#FFEB3B"
                     android:orientation="horizontal"
                     android:weightSum="2">
 
@@ -425,26 +424,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
-                        android:background="@drawable/box_holder_background"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1.4"
-                            android:padding="11dp"
-                            android:src="@drawable/wallet_icon" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginEnd="55dp"
-                            android:layout_weight=".55"
-                            android:gravity="center_vertical"
-                            android:text="@string/pocket_upi"
-                            android:textColor="@color/black"
-                            android:textSize="16sp" />
+                        android:background="#8BC34A">
 
 
                     </LinearLayout>
@@ -454,26 +434,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
-                        android:background="@drawable/box_holder_background"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1.4"
-                            android:padding="11dp"
-                            android:src="@drawable/user_icon" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginEnd="55dp"
-                            android:layout_weight=".5"
-                            android:gravity="center_vertical"
-                            android:text="@string/transfer_to_yourself"
-                            android:textColor="@color/black"
-                            android:textSize="16sp" />
+                        android:background="#2196F3">
 
 
                     </LinearLayout>
@@ -484,6 +445,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="#FFEB3B"
                     android:orientation="horizontal"
                     android:weightSum="2">
 
@@ -492,25 +454,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
-                        android:background="@drawable/box_holder_background"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1.4"
-                            android:src="@drawable/bank_icon" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginEnd="55dp"
-                            android:layout_weight=".35"
-                            android:gravity="center_vertical"
-                            android:text="@string/send_to_bank_account"
-                            android:textColor="@color/black"
-                            android:textSize="16sp" />
+                        android:background="#F44336">
 
 
                     </LinearLayout>
@@ -520,26 +464,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
-                        android:background="@drawable/box_holder_background"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1.4"
-                            android:padding="6dp"
-                            android:src="@drawable/check_balance" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginEnd="55dp"
-                            android:layout_weight=".45"
-                            android:gravity="center_vertical"
-                            android:text="@string/check_bank_balance"
-                            android:textColor="@color/black"
-                            android:textSize="16sp" />
+                        android:background="#673AB7">
 
 
                     </LinearLayout>
@@ -553,37 +478,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_below="@id/paymentOptionBar"
-                android:layout_marginTop="20dp">
-
-                <ImageView
-                    android:id="@+id/spark_icon_in_bar"
-                    android:layout_width="38dp"
-                    android:layout_height="28dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:src="@drawable/spark_icon" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:layout_toEndOf="@id/spark_icon_in_bar"
-                    android:gravity="center_vertical"
-                    android:text="@string/recharge_amp_bills"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentEnd="true"
-                    android:gravity="center_vertical"
-                    android:text="@string/all_categories"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
+                android:layout_marginTop="20dp"
+                android:background="@color/blue">
 
             </RelativeLayout>
 

@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Quick Pay</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pay_rent">Pay Rent</string>
+    <string name="all_categories"><![CDATA[All Categories >]]></string>
+    <string name="recharge_amp_bills"><![CDATA[Recharge & Bills]]></string>
+    <string name="check_bank_balance">Check Bank Balance</string>
+    <string name="send_to_bank_account">Send to Bank Account</string>
+    <string name="transfer_to_yourself">Transfer to yourself</string>
+    <string name="pocket_upi">Pocket UPI</string>
+    <string name="pay_to_contacts">Pay to contacts</string>
+    <string name="my_qr_code"><![CDATA[My QR Code >]]></string>
+    <string name="upi_money_transfer">UPI Money Transfer</string>
+    <string name="earn_14">Earn 14%</string>
+    <string name="loans">Loans</string>
+    <string name="paylater">PayLater</string>
+    <string name="upi_transfers">UPI Transfers</string>
+    <string name="credit_card_payment">Credit Card Payment</string>
+    <string name="recharge_amp_bills2"><![CDATA[Recharge & Bills]]></string>
+    <string name="upi_transfers2">UPI Transfers</string>
 </resources>

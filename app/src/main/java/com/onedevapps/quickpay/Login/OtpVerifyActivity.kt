@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.blogspot.atifsoftwares.animatoolib.Animatoo
-import com.onedevapps.quickpay.MainScreen.MainActivity
+import com.onedevapps.quickpay.FragmentScreen.MainActivity
 import com.onedevapps.quickpay.databinding.ActivityOtpVerifyBinding
 
 class OtpVerifyActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.onedevapps.quickpay.MainScreen
+package com.onedevapps.quickpay.FragmentScreen
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
