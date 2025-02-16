@@ -26,6 +26,7 @@ class OtpGenerateActivity : AppCompatActivity() {
 //        }
 
 
+
         binding.cardViewButton.setOnClickListener {
 
 

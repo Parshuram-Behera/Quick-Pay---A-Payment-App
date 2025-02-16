@@ -95,6 +95,7 @@
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <View
         android:id="@+id/view5"
         android:layout_width="0dp"
