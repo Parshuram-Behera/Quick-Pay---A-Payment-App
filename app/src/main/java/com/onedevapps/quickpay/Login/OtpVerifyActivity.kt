@@ -28,8 +28,6 @@ class OtpVerifyActivity : AppCompatActivity() {
 //        }
 
 
-
-
         var userNumber  = intent.getStringExtra("UserNumber")
         binding.showUserNumber.text = "+91 "+userNumber
 

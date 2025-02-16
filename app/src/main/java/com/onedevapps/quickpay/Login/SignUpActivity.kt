@@ -24,7 +24,6 @@ class SignUpActivity : AppCompatActivity() {
 //            insets
 //        }
 
-
         getWindow().setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN

@@ -9,7 +9,6 @@
     tools:context=".Login.OtpGenerateActivity">
 
 
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
         android:layout_width="wrap_content"
